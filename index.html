@@ -5,23 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles.css">
     <title>Mental Health Assessment</title>
 </head>
 
-<body>
+<body class="mx-10 md:mx-20">
     <!-- heading section -->
     <div class="text-center my-10">
         <h2 class="text-4xl font-semibold">Mental Health Assessment</h2>
         <h4 class="text-2xl">Impact Behavioral Health Recovary Care</h4>
-        <p class="text-2xl">Core Assessment</p>
-
-
+        <p class="text-xl">Core Assessment</p>
     </div>
+
     <h5 class="text-center text-xl font-semibold mb-3">Client Information:</h5>
-    <!-- main form -->
-    <div class="gird grid-cols-4 border mx-10">
 
-    </div>
+   
+
+    <form class="font-semibold">
+        <div class="grid grid-cols-4 border border-black ">
+            <p class="border-r border-black px-3 pb-6">Name of Person Served:</p>
+            <input class="border-r border-black" type="text">
+            <p class="border-r border-black pl-4">Preferred Name:</p>
+            <input type="text">
+        </div>
+        <div class="grid grid-cols-4 border-b border-black">
+            <p class="border-x border-black px-3 pb-3">MHP Clinician Name:</p>
+            <input class="border-r border-black" type="text">
+            <p class="border-r border-black  pl-4">Date of service:</p>
+            <input class="border-r border-black" type="text">
+        </div>
+
+        <div class="grid grid-cols-6 border-b border-x border-black">
+            <input class="border-r border-black  pb-6 px-2" type="text" value="Age:">
+            <input class="border-r border-black  pb-6 px-2" type="text" value="DOB:">
+            <input class="border-r border-black  pb-6 px-2" type="text" value="DOB:">
+            <input class="border-r border-black  pb-6 px-2" type="text" value="Marital Status:">
+            <input class="border-r border-black  pb-6 px-2" type="text" value="Gender Identity:">
+            <input class="  pb-6 px-2" type="text" value="Pronouns:">
+        </div>
+        <div class="grid grid-cols-4 border-b border-x border-black">
+            <textarea class="border-r border-black px-1 pb-4"
+                rows="3">Staff speaks language of Person Served:</textarea>
+            <textarea class="border-r border-black px-1 pb-4" rows="3">Preferred language of Person Served:</textarea>
+            <textarea class="border-r border-black px-1 pb-4" rows="3">Interpreter:</textarea>
+            <textarea class="borde border-black px-1 pb-4" rows="3">Advance Directive Info Provided:</textarea>
+        </div>
+        <div class="grid grid-cols-4 border-b border-x border-black">
+            <input class="border-r border-black pb-6 px-2" type="text" value="Address:">
+            <input class="border-r border-black pb-6 px-2" type="text" value="City:">
+            <input class="border-r border-black pb-6 px-2" type="text" value="State:">
+            <input class="pb-6 px-2" type="text" value="Zip Code:">
+        </div>
+        <div class="grid grid-cols-4 border-b border-x border-black">
+            <input class="border-r border-black px-2 pb-6" type="text" value="Phone Numbers:">
+            <input class="border-r border-black pb-6" type="text">
+            <input class="border-r border-black pb-6" type="text">
+            <input class=" pb-6" type="text">
+        </div>
+
+        <div class="grid grid-cols-3 border border-x border-black my-16">
+            <input class="border-r border-black px-2 pb-14" type="text" value="Direct Service Time:">
+            <input class="border-r border-black pb-" type="text">
+            <input class=" border-black pb-3" type="text">
+
+        </div>
+
+        <div>
+            <p class="border border-black px-2">Presenting Problem/Chief Complaint: Current and history of. Include
+                impairments in functioning:</p>
+        </div>
+        <div class="grid grid-cols-3 border-b border-x border-black">
+            <input class="border-r border-black pb-6 px-2" type="text" value="Anxiety:">
+            <input class="border-r border-black pb-6 px-2" type="text" value="Paranoia:">
+            <input class="pb-6 px-2" type="text" value="Impairments in ADL's">
+        </div>
+        <div class="grid grid-cols-3 border-b border-x border-black">
+            <input class="border-r border-black pb-6 px-2" type="text" value="Depression:">
+            <input class="border-r border-black pb-6 px-2" type="text" value="Auditory Hallucinations:">
+            <input class="pb-6 px-2" type="text" value="Aggressiveness Irritability:">
+        </div>
+        <div class="grid grid-cols-3 border-b border-x border-black">
+            <input class="border-r border-black pb-6 px-2" type="text" value="Trauma:">
+            <input class="border-r border-black pb-6 px-2" type="text" value="Visual Hallucinations:">
+            <input class="pb-6 px-2" type="text" value="Oppositional:">
+        </div>
+        <div class="grid grid-cols-3 border-b border-x border-black">
+            <input class="border-r border-black pb-6 px-2" type="text" value="">
+            <input class="border-r border-black pb-6 px-2" type="text" value="Difficulty concentrating:">
+            <input class="pb-6 px-2" type="text" value="Academic difficulties:">
+        </div>
+        <div class="grid grid-cols-3 border-b border-x border-black">
+            <input class="border-r border-black pb-6 px-2" type="text" value="">
+            <input class="border-r border-black pb-6 px-2" type="text" value="Tactile Hallucinations:">
+            <input class=" pb-6 px-2" type="text" value="">
+        </div>
+        <div class="border-x border-b border-black grid gap-3 px-2">
+            <input type="text" value="Presenting Problem:">
+            <input type="text" value="Impairments:">
+            <input type="text" value="Chief Complaints:">
+            <input type="text" value="History of Present Illness:">
+            <input type="text" value="PsychosocialFactors:">
+            <input type="text" value="Trauma:">
+            <input type="text" value="Legal Status:">
+            <input type="text" value="Legal history:">
+            <input type="text" value="Highest grade completed:">
+            <input type="text" value="Educational Comments:">
+            <input type="text" value="Days of school missed in the last 6 months:">
+            <input type="text" value="Days of incarceration in the last 6 months:">
+            <input type="text" value="Employment:">
+        </div>
+
+    </form>
+
+
+
+
 </body>
 
 </html>
